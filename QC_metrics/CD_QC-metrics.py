@@ -9,11 +9,9 @@ import numpy as np
 
 # Author: Pier-Luc Plante
 # e-mail: plpla2 @ ulaval.ca
-# Licence: GPL-v3
-
 
 #
-# Scripting Node for Compound Discoverer v3.4 that calculates QC metrics in the Compounds table.
+# Scripting Node for Compound Discoverer v3.4 that calculates QC metrics and add them to the Compounds table.
 # CDScriptingNodeHelper was provided by CD and is available at mycompounddiscoverer.com
 #
 
@@ -84,7 +82,7 @@ output_df = pd.DataFrame({"Compounds ID" : compounds_table["Compounds ID"],
 outfilename = 'CompoundsWithQCMetrics.txt'
 (workdir, _ ) = os.path.split(response_path)
 
-#outfile_path = os.path.join(workdir, outfilename) # This does not work on my current setup. (adds \\ to a path containing / as separator)
+#outfile_path = os.path.join(workdir, outfilename) # This does not work on my current setup: it adds \\ to a path containing / as separator)
 outfile_path = workdir + f"/{outfilename}"
 with open(outfile_path, mode='w') as compounds_csv:
     output_df.to_csv(compounds_csv, sep="\t", index=False)
