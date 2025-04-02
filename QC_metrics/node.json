@@ -11,7 +11,7 @@
     "WorkflowType": "Post-Processing",
     "ImageLarge": "IMG_32x32.png",
     "ImageSmall": "IMG_16x16.png",
-    "License": "GPL-V3",
+    "License": "MIT",
     
     "ScriptProcessorArguments": {
         "ExecutableCommandLineArguments": "C:\\Program Files\\Thermo\\Compound Discoverer 3.4\\Tools\\Scripts\\QC_metrics\\CD_QC-metrics.py %NODEARGS%",
