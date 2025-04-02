@@ -1,0 +1,25 @@
+{
+    "Guid": "cfa7a1d4-7056-4bcc-9d61-081ea7806838",
+    "Category": "Scripting nodes",
+    "Name": "Add QC metrics",
+    "Description": "Adds QC metrics to the Compounds table",
+    "Version": 1,
+    "Publisher": null,
+    "DevelopedBy": "Pier-Luc Plante",
+    "Homepage": "github.com/plpla",
+    "LegalInformation": null,
+    "WorkflowType": "Post-Processing",
+    "ImageLarge": "IMG_32x32.png",
+    "ImageSmall": "IMG_16x16.png",
+    "License": "GPL-V3",
+    
+    "ScriptProcessorArguments": {
+        "ExecutableCommandLineArguments": "C:\\Program Files\\Thermo\\Compound Discoverer 3.4\\Tools\\Scripts\\QC_metrics\\CD_QC-metrics.py %NODEARGS%",
+        "ExecutablePath": "C:\\Program Files\\Python313\\python.exe",
+        "ExpectResponse": true,
+        "UseRFriendlyNames": true,
+        "RequestedTablesAndColumns": "Compounds; Study Information"
+    }
+    
+    }
+    
